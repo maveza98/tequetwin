@@ -1,0 +1,354 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 0; /* Elimina el padding superior */
+}
+
+/* Navbar con selector más específico */
+nav.navbar.navbar-tequetwin {
+    background-color: #620303 !important; /* Fondo blanco */
+    color: #c62828 !important;         /* Texto rojo */
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1030;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    min-height: 56px; /* Altura mínima de la barra */
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar.navbar-tequetwin.scrolled {
+    background-color: rgba(106, 1, 1, 0.85) !important; /* Blanco semitransparente al hacer scroll */
+    color: #c62828 !important;
+}
+
+nav.navbar.navbar-tequetwin .navbar-brand,
+nav.navbar.navbar-tequetwin .nav-link {
+    color: #c62828 !important;
+}
+
+nav.navbar.navbar-tequetwin .navbar-brand img {
+    height: 125px;   /* Ajusta el alto según prefieras */
+    max-height: 125px;
+    width: auto;
+    transition: height 0.3s;
+}
+
+/* Hero con degradado */
+.hero {
+    position: relative;
+    background: url('../resources/menu.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* Blanco puro */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Sombra más suave */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero a.btn {
+    background-color: #c62828;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(198,40,40,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.hero a.btn:hover,
+.hero a.btn:focus {
+    background-color: #870f0f; /* Rojo más claro al pasar el mouse */
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(198,40,40,0.3);
+}
+
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    background: url('../resources/sobre-nosotros.webp') center center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-nosotros::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.65); /* Más contraste que 0.5 */
+    backdrop-filter: blur(3px);    /* Suaviza el fondo */
+    z-index: 1;
+    pointer-events: none;
+}
+
+#sobre-nosotros > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenedor con efecto vidrio */
+#sobre-nosotros .container {
+    background: rgba(255,255,255,0.08); /* Transparente con ligero blanco */
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Título */
+#sobre-nosotros h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffd700; /* Dorado */
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+/* Párrafos */
+#sobre-nosotros p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #fffbe6; /* Blanco cálido */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+
+#menu {
+    background: url('../resources/hero.jpg') center center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    padding: 0 20px; /* Elimina el padding vertical extra */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* Oscurece la imagen */
+    z-index: 1;
+    pointer-events: none;
+}
+
+#menu > * {
+    position: relative;
+    z-index: 2; /* Para que quede encima del overlay oscuro */
+}
+
+/* Título */
+#menu h2 {
+    font-weight: 700;
+    color: #ffd700; /* Dorado brillante */
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    margin-bottom: 2rem;
+}
+
+/* Tarjetas */
+#menu .card {
+    background: rgba(0,0,0,0.6); /* Fondo semitransparente */
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+}
+
+/* Imagen dentro de la card */
+#menu .card-img-top {
+    border-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Títulos de productos */
+#menu .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffb347; /* Naranja dorado */
+}
+
+/* Texto y precios */
+#menu .card-text,
+#menu ul li {
+    color: #fffbe6; /* Blanco cálido */
+}
+
+
+/* Fondo con color sólido */
+.contacto-section {
+    background: #111; /* Negro suave */
+    color: #fff;
+}
+
+/* Opción alternativa: fondo con degradado */
+.contacto-section {
+    background: linear-gradient(135deg, #620303, #c62828); /* Rojo vino → rojo brillante */
+    color: #fff;
+}
+
+/* Botones con efecto */
+.contacto-section .btn {
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-section .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+/* Footer */
+.footer-tequetwin {
+    background: linear-gradient(135deg, #620303, #c62828); /* Degradado elegante */
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    position: relative;
+}
+
+.footer-tequetwin p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #fffbe6; /* Blanco cálido */
+}
+
+/* Links */
+.footer-tequetwin a {
+    color: #ffd700; /* Dorado */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-tequetwin a:hover {
+    color: #ffb347; /* Naranja dorado */
+}
+
+/* Divider */
+.footer-tequetwin::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2px;
+}
+
+
+.row.text-center {
+    gap: 32px 0; /* Espacio vertical entre filas */
+}
+
+.card {
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    transition: box-shadow 0.3s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(198,40,40,0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #c62828;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    margin-top: auto;
+    padding-left: 0;
+    list-style: none;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Links del navbar */
+nav.navbar.navbar-tequetwin .nav-link {
+    color: #ffb347 !important; /* Naranja-dorado */
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav.navbar.navbar-tequetwin .nav-link:hover,
+nav.navbar.navbar-tequetwin .nav-link:focus {
+    color: #ffd700 !important; /* Dorado intenso */
+    text-decoration: none; /* Evita subrayado */
+}

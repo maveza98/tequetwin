@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequetwin - Doble Sabor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Iconos -->
+     <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./resources/logo/tequetwin-logo.png">
+
+    <!-- Nuestro CSS va después para que sobrescriba -->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-tequetwin fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <img src="./resources/logo/tequetwin-logo.png" alt="Tequetwin Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="inicio" class="hero mt-5">
+  <div>
+    <h1>¡Descubre el auténtico sabor de Tequetwin!</h1>
+    <p>Tequeños y pastelitos hechos con amor y tradición. Disfruta cada bocado y comparte momentos únicos con quienes más quieres.</p>
+    <a href="#menu" class="btn btn-light btn-lg mt-3">Ver Menú</a>
+  </div>
+</section>
+
+<!-- Sobre Nosotros -->
+<section id="sobre-nosotros" class="py-5 text-center">
+    <div class="container" data-aos="fade-right">
+        <h2 class="mb-4">Sobre Nosotros</h2>
+        <p>
+            Tequetwin nació del amor y la dedicación por la cocina, convirtiendo una pasión familiar en una marca auténtica. <br>
+            Cada tequeño y pastelito está hecho a mano, siguiendo recetas tradicionales y cuidando cada detalle para ofrecerte el mejor sabor. <br>
+            En Tequetwin creemos que compartir comida es compartir momentos especiales, y por eso ponemos el corazón en cada bocado.
+        </p>
+    </div>
+</section>
+
+<!-- Menú -->
+<section id="menu" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-down">Nuestro Menú</h2>
+        <div class="row text-center">
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card p-3">
+                    <img src="./resources/tequeños-tradicionales.jpeg" class="card-img-top" alt="Tequeños Tradicionales">
+                    <div class="card-body">
+                        <h5 class="card-title">Tequeños Tradicionales</h5>
+                        <p class="card-text">
+                            Crujientes por fuera, suaves por dentro, rellenos de queso.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>25 unidades:</strong> $10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card p-3">
+                    <img src="./resources/queso-platano.jpg" class="card-img-top" alt="Queso y Plátano">
+                    <div class="card-body">
+                        <h5 class="card-title">Queso y Plátano</h5>
+                        <p class="card-text">
+                            La combinación perfecta de queso fundido y plátano dulce en cada bocado.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>12 unidades:</strong> $7</li>
+                            <li><strong>16 unidades:</strong> $9</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card p-3">
+                    <img src="./resources/jamon-queso.png" class="card-img-top" alt="Queso y Jamón Ahumado">
+                    <div class="card-body">
+                        <h5 class="card-title">Queso y Jamón Ahumado</h5>
+                        <p class="card-text">
+                            Tequeños rellenos de queso y jamón ahumado, para los amantes de los sabores intensos.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>12 unidades:</strong> $10</li>
+                            <li><strong>16 unidades:</strong> $12</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-4 offset-md-2" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card p-3">
+                    <img src="./resources/guayaba.webp" class="card-img-top" alt="Queso y Bocadillo de Guayaba">
+                    <div class="card-body">
+                        <h5 class="card-title">Queso y Bocadillo de Guayaba</h5>
+                        <p class="card-text">
+                            El contraste ideal entre el queso y el dulce tradicional de guayaba.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>12 unidades:</strong> $6</li>
+                            <li><strong>16 unidades:</strong> $8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="800">
+                <div class="card p-3">
+                    <img src="./resources/capresa.jpg" class="card-img-top" alt="Capresa">
+                    <div class="card-body">
+                        <h5 class="card-title">Capresa</h5>
+                        <p class="card-text">
+                            Inspirados en la clásica ensalada capresa: queso, tomate y albahaca en un tequeño único.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>12 unidades:</strong> $8</li>
+                            <li><strong>16 unidades:</strong> $10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1000">
+                <div class="card p-3">
+                    <img src="./resources/mixto1.jpg" class="card-img-top" alt="Combo Mixto 12 unidades">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Mixto (12 unidades)</h5>
+                        <p class="card-text">
+                            Disfruta una selección variada:<br>
+                            3 Capresa, 3 Queso y Jamón Ahumado,<br>
+                            3 Queso y Bocadillo de Guayaba,<br>
+                            3 Queso y Plátano.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>Precio:</strong> $8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="1200">
+                <div class="card p-3">
+                    <img src="./resources/mixto2.jpg" class="card-img-top" alt="Combo Mixto 16 unidades">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Mixto (16 unidades)</h5>
+                        <p class="card-text">
+                            ¡Más variedad para compartir!<br>
+                            4 Capresa, 4 Queso y Jamón Ahumado,<br>
+                            4 Queso y Bocadillo de Guayaba,<br>
+                            4 Queso y Plátano.<br>
+                            <strong>Tamaño:</strong> 7 cm
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>Precio:</strong> $10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto solo con teléfono e Instagram -->
+<section id="contacto" class="py-5 contacto-section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5 text-light">📲 Contáctanos</h2>
+    <div class="row justify-content-center text-center">
+      
+      <!-- WhatsApp -->
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-whatsapp fs-1 text-success"></i>
+        <p>
+          <a href="https://wa.me/584148051643" target="_blank" 
+             class="btn btn-success btn-lg rounded-pill px-4 shadow d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-whatsapp"></i> Escríbenos
+          </a>
+        </p>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-instagram fs-1 text-danger"></i>
+        <p>
+          <a href="https://instagram.com/tequetwin" target="_blank" 
+             class="btn btn-danger btn-lg rounded-pill px-4 shadow d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-instagram"></i> @tequetwin
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer-tequetwin">
+    <p>© 2025 Tequetwin. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+document.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar-tequetwin");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+
+
+</body>
+</html>
