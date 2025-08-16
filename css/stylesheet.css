@@ -155,7 +155,7 @@ nav.navbar.navbar-tequetwin .navbar-brand img {
 
 
 #menu {
-    background: url('../resources/menu.jpg') center center/cover no-repeat;
+    background: url('./resources/menu.jpg') center center/cover no-repeat;
     color: #fff;
     position: relative;
     padding: 0 20px; /* Elimina el padding vertical extra */
@@ -352,4 +352,5 @@ nav.navbar.navbar-tequetwin .nav-link:focus {
     color: #ffd700 !important; /* Dorado intenso */
     text-decoration: none; /* Evita subrayado */
 }
+
 
